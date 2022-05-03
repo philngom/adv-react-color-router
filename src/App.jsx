@@ -12,10 +12,8 @@ import styles from './App.css';
 function RGB() {
   // 🚨 Get values for r, g, and b from params
   // 🚨 Uncomment next lines after importing
-  const r = useParams();
-  const g = useParams();
-  const b = useParams();
-  console.log(r, g, b);
+  const { r, g, b } = useParams();
+  console.log(r);
   return (
   <div
     className={styles.fill}
